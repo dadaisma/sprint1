@@ -1,6 +1,6 @@
 public class Cotxe {
     private static final String marca = "Lamborghini";
-    private static String model;
+    private static String model = "Ghibli";
     private final int potencia;
 
     public Cotxe(String model, int potencia) {
@@ -29,19 +29,5 @@ public class Cotxe {
         return potencia;
     }
 
-    public static void main(String[] args) {
-        // Creem una instància de Cotxe
-        Cotxe cotxe = new Cotxe("Corolla", 150);
 
-        // Mostrem la marca, el model i la potència
-        System.out.println("Marca: " + Cotxe.getMarca());
-        System.out.println("Model: " + Cotxe.getModel());
-        System.out.println("Potència: " + cotxe.getPotencia());
-
-        // Invocació del mètode estàtic frenar()
-        Cotxe.frenar();
-
-        // Invocació del mètode no estàtic accelerar()
-        cotxe.accelerar();
-    }
 }
