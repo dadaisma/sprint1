@@ -21,11 +21,11 @@ public class Main {
 
     // Static method
     public static void printStaticMessage() {
-        System.out.println("This is a static method.");
+        System.out.println("Aquest SI és un mètode estàtic.");
     }
 
     // Non-static method
     public void printNonStaticMessage() {
-        System.out.println("This is a non-static method.");
+        System.out.println("Aquest NO és un mètode estàtic.");
     }
 }
