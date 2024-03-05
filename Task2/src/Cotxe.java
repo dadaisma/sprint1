@@ -4,9 +4,10 @@ public class Cotxe {
     private final int potencia;
 
     public Cotxe(String model, int potencia) {
-        this.model = model;
+        Cotxe.model = model;
         this.potencia = potencia;
     }
+
 
     public static void frenar() {
         System.out.println("El vehicle està frenant");
