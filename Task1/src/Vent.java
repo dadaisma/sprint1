@@ -5,4 +5,9 @@ class Vent extends Instrument {
     void Tocar() {
         System.out.println("Està sonant un instrument de vent ");
     }
+
+    static void metodeEstatic() {
+        System.out.println("Aquest és un mètode estàtic de la classe Vent.");
+    }
+
 }

@@ -7,6 +7,12 @@ public class Main {
         Perc perc = new Perc();
         perc.Tocar();
 
+
+        //
+        Vent.metodeEstatic();
+        Corda.metodeEstatic();
+        Perc.metodeEstatic();
+
         // Calling static and non-static methods
         printStaticMessage();
         Main test = new Main();
