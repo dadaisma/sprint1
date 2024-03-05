@@ -1,5 +1,5 @@
 public class Cotxe {
-    private static final String marca = "Toyota";
+    private static final String marca = "Lamborghini";
     private static String model;
     private final int potencia;
 
