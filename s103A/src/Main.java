@@ -17,7 +17,7 @@ Mes juliol = new Mes ("juliol");
 //Mes agost = new Mes ("agost");
 Mes setembre = new Mes ("setembre");
 Mes octubre = new Mes ("octubre");
-Mes denovembre = new Mes ("denovembre");
+Mes novembre = new Mes ("denovembre");
 Mes desembre = new Mes ("desembre");
 
 
@@ -33,10 +33,10 @@ LinkedHashSet<Mes> mesSet = new LinkedHashSet<>();
         mesSet.add(juliol);
         mesSet.add(setembre);
         mesSet.add(octubre);
-        mesSet.add(denovembre);
-        mesSet.add(denovembre);
-        mesSet.add(denovembre);
-        mesSet.add(denovembre);
+        mesSet.add(novembre);
+        mesSet.add(novembre);
+        mesSet.add(novembre);
+        mesSet.add(novembre);
         mesSet.add(desembre);
 
 Mes agost = new Mes ("agost");
