@@ -3,13 +3,13 @@
 public class Main {
     public static void main(String[] args) {
         // Create some products
-     //   Producte product1 = new Producte("Pasta", 10.0);
+    //    Producte product1 = new Producte("Pasta", 10.0);
      //   Producte product2 = new Producte("Arroz", 20.0);
      //   Producte product3 = new Producte("Vino", 165.0);
 
         // Create a sale and add products to it
         Venda sale = new Venda();
-     //   sale.afegirProducte(product1);
+      //  sale.afegirProducte(product1);
      //   sale.afegirProducte(product2);
        // sale.afegirProducte(product3);
         // Exemple de generació i captura d'una excepció ArrayIndexOutOfBoundsException
