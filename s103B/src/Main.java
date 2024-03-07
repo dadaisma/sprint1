@@ -27,6 +27,13 @@ public class Main {
           lista2.add(elemento);
         }
 
+
+        System.out.println("lista original"); {
+            for(int orig: lista1){
+                System.out.println(orig);
+            }
+        }
+
         System.out.println("segunda lista con elemento orden reverso");{
             for(Integer numero: lista2){
                 System.out.println(numero);
