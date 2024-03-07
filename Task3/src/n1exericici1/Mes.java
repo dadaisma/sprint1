@@ -1,3 +1,5 @@
+package n1exericici1;
+
 public class Mes {
 
     private final String nom;

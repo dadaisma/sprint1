@@ -1,3 +1,5 @@
+package n1exericici1;
+
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 
@@ -14,7 +16,7 @@ Mes abril = new Mes ("abril");
 Mes maig = new Mes ("maig");
 Mes juny = new Mes ("juny");
 Mes juliol = new Mes ("juliol");
-//Mes agost = new Mes ("agost");
+//s1exericici1.Mes agost = new s1exericici1.Mes ("agost");
 Mes setembre = new Mes ("setembre");
 Mes octubre = new Mes ("octubre");
 Mes novembre = new Mes ("denovembre");

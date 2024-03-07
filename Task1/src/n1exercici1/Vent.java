@@ -1,3 +1,5 @@
+package n1exercici1;
+
 class Vent extends Instrument {
     String nom = "violin";
     int preu = 1000;
@@ -7,7 +9,7 @@ class Vent extends Instrument {
     }
 
     static void metodeEstatic() {
-        System.out.println("Aquest és un mètode estàtic de la classe Vent.");
+        System.out.println("Aquest és un mètode estàtic de la classe n1exercici1.Vent.");
     }
 
 }

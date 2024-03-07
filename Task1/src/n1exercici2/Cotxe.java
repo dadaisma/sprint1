@@ -1,3 +1,5 @@
+package n1exercici2;
+
 public class Cotxe {
     private static final String marca = "Lamborghini";
     private static String model = "Ghibli";

@@ -1,11 +1,13 @@
+package n1exercici1;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         // Create some products
-    //    Producte product1 = new Producte("Pasta", 10.0);
-     //   Producte product2 = new Producte("Arroz", 20.0);
-     //   Producte product3 = new Producte("Vino", 165.0);
+    //    n1exercici1.Producte product1 = new n1exercici1.Producte("Pasta", 10.0);
+     //   n1exercici1.Producte product2 = new n1exercici1.Producte("Arroz", 20.0);
+     //   n1exercici1.Producte product3 = new n1exercici1.Producte("Vino", 165.0);
 
         // Create a sale and add products to it
         Venda sale = new Venda();

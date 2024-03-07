@@ -1,3 +1,5 @@
+package n1exercici1;
+
 class Perc extends Instrument {
     String nom = "bongo";
     int preu = 800;
