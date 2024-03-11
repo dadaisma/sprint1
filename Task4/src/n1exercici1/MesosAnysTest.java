@@ -1,7 +1,6 @@
 package n1exercici1;
 
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class MesosAnysTest {
@@ -9,13 +8,16 @@ public class MesosAnysTest {
     @Test
     public void testGenerarLlistaMesos() {
         MesosAnys mesosAnys = new MesosAnys();
-        // Verifichiamo che la lista non sia nulla
+        // La llista no és nul·la.
         assertNotNull(mesosAnys.generarLlistaMesos());
+        System.out.println("La llista no és nul·la.");
 
-        // Verifichiamo che la lista contenga esattamente 12 mesi
+        // La llista conté exactament 12 mesos
         assertEquals(12, mesosAnys.generarLlistaMesos().size());
+        System.out.println("\n" + "La llista conté exactament 12 mesos.");
 
-        // Verifichiamo che il mese di agosto si trovi nella posizione 8
+        // El mes 'agost' es troba a la posició 8 de la llista
         assertEquals("agost", mesosAnys.generarLlistaMesos().get(7));
+        System.out.println("El mes 'agost' es troba a la posició 8 de la llista.");
     }
 }
