@@ -1,29 +1,30 @@
 package n1exercici1;
+
 import java.io.File;
 import java.util.Arrays;
 
 public class DirectoryListing {
 
-    public static void main(String[] args) {
-        // Ottieni il percorso del direttorio corrente
+    public void listCurrentDirectory() {
+        // Get current path
         String currentDirectoryPath = System.getProperty("user.dir");
 
-        // Crea un oggetto File per il direttorio corrente
+        // Build "File" object for the current directory
         File currentDirectory = new File(currentDirectoryPath);
 
-        // Verifica se il percorso corrente corrisponde a una directory
+        // Check if the path matches a directory
         if (!currentDirectory.isDirectory()) {
             System.out.println("El camí actual no és un directori.");
             return;
         }
 
-        // Ottieni un array dei nomi dei file e delle directory nella directory corrente
+        // Get an array of file and directory names in the current directory
         String[] fileList = currentDirectory.list();
 
-        // Ordina l'array dei nomi dei file in ordine alfabetico
+        // Sort the array in alphabetical order
         Arrays.sort(fileList);
 
-        // Stampiamo i nomi dei file e delle directory nella directory corrente
+        // Print file names and current directory
         System.out.println("Contingut del directori actual:");
         for (String file : fileList) {
             System.out.println(file);
