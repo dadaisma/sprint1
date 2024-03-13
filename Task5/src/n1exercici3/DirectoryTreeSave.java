@@ -23,7 +23,7 @@ public class DirectoryTreeSave {
             for (String file : fileList) {
                 // Create an "object File" for current file
                 File currentFile = new File(directory.getPath() + File.separator  + file);
-                System.out.println("wearehere"+currentFile);
+             //   System.out.println("wearehere"+currentFile);
                 // get last mod update
                 long lastModifiedTime = currentFile.lastModified();
                 Date lastModifiedDate = new Date(lastModifiedTime);
