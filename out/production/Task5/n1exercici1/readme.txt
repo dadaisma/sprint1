@@ -1,10 +1,9 @@
-Per executar l'exercici n1exercici3 des de la línia de comandos, seguiu aquests passos:
+Per executar l'exercici n1exercici1 des de la línia de comandos, seguiu aquests passos:
 
-En Main.java y en DirectoryTreeSave.java desabilitar package n1exercici3; con "//" Así-> "//n1exercici3;"
-En Main.java desabilitar con "//" la var filePath e abilitar la var "filePah" bajo el comentario "use this console path"
+En Main.java y en DirectoryListing.java desabilitar package n1exercici1; con "//" Así-> "//n1exercici1;"
 
 1. Obriu un terminal o una finestra d'ordres.
-2. Navegueu fins al directori que conté el vostre codi font de Task5\src\ de l'exercici n1exercici3. Utilitzeu la comanda 'cd' (change directory) per fer-ho.
+2. Navegueu fins al directori que conté el vostre codi font de Task5\src\ de l'exercici n1exercici1. Utilitzeu la comanda 'cd' (change directory) per fer-ho.
 3. Compileu el vostre programa Java amb la comanda 'javac', seguida del nom del fitxer font. Per exemple:
 
    javac Main.java

@@ -27,8 +27,10 @@ public class Main {
 
         // Define the file path for saving the directory tree
         String file = "directory_tree.txt";
-        String filePath = currentDirectory + File.separator + "Task5" + File.separator +"Data" + File.separator + File.separator + file;
-      //  System.out.println("pattth "+ filePath);
+       String filePath = currentDirectory + File.separator + "Task5" + File.separator +"Data" + File.separator + File.separator + file;
+//use thi console path
+      //  String filePath = currentDirectory + File.separator + "Data" + File.separator + file;
+        //  System.out.println("pattth "+ filePath);
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
             DirectoryTreeSave directoryTree = new DirectoryTreeSave();
             // List the content of the current directory recursively
