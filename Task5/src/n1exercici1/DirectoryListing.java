@@ -8,7 +8,7 @@ public class DirectoryListing {
     public void listCurrentDirectory() {
         // Get current path
         String currentDirectoryPath = System.getProperty("user.dir");
-
+    System.out.println("werehere" + currentDirectoryPath);
         // Build "File" object for the current directory
         File currentDirectory = new File(currentDirectoryPath);
 

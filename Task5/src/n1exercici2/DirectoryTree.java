@@ -25,7 +25,7 @@ public class DirectoryTree {
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
             // Stampa il file o la directory corrente con l'indentazione corrispondente
-            System.out.println(indent + (currentFile.isDirectory() ? "D " : "F ") + file + " (\n" + "Última edició: " + sdf.format(lastModifiedDate) + ")");
+            System.out.println(indent + (currentFile.isDirectory() ? "D " : "F ") + file + " (\n" + "Ultima edicio: " + sdf.format(lastModifiedDate) + ")");
 
             // Se il file corrente è una directory, elenca ricorsivamente il suo contenuto
             if (currentFile.isDirectory()) {
