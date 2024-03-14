@@ -11,13 +11,13 @@ public class Main {
 
 
         //diferente order
-        NoGenericMethods<String> noGeneric2 = new NoGenericMethods<>("Tenedor2", "Cuchillo3","Martillo1");
+        NoGenericMethods<String> noGenericB = new NoGenericMethods<>("Tenedor2", "Cuchillo3","Martillo1");
 
-        System.out.println("Objecte 1: "+ noGeneric2.getObject1());
-        System.out.println("Objecte 2: "+ noGeneric2.getObject2());
-        System.out.println("Objecte 3: "+ noGeneric2.getObject3());
+        System.out.println("Objecte 1: "+ noGenericB.getObject1());
+        System.out.println("Objecte 2: "+ noGenericB.getObject2());
+        System.out.println("Objecte 3: "+ noGenericB.getObject3());
 
-        //modify the obj to check functionality
+        //modify the objA to check functionality
         noGeneric.setObject1("Era un Martillo ahora es una Mariposa");
         noGeneric.setObject2("Era un Tenedor ahora es un Flor");
         noGeneric.setObject3("Era un Cuchillo ahora es Romero");
