@@ -6,19 +6,19 @@ public class Principal {
     @SuppressWarnings("deprecation")
     public static void main(String[] args) {
 
-        // Creazione di un treballador presencial e calcolo del salario
+        // Creació d'un  treballador presencial i càlcul salarial
         TreballadorPresencial treballadorPresencial = new TreballadorPresencial("Jordi", "Garcia", 10.0);
         double souPresencial = treballadorPresencial.calcularSou(160); // 40 horas por semana
         System.out.println("Sou treballador presencial: " + souPresencial);
 
-        // Creazione di un treballador online e calcolo del salario
+        // Creació d'un treballador  online i càlcul salarial
         TreballadorOnline treballadorOnline = new TreballadorOnline("Laura", "Martinez", 8.0);
         double souOnline = treballadorOnline.calcularSou(160); //  40 horas por semana
         System.out.println("Sou treballador online: " + souOnline);
 
 
 
-        // Invocazione dei metodi obsoleti e suppressione dei warning
+        // Invocacio dei metodi obsoleti y suppress  warning
         TreballadorPresencial presencial = new TreballadorPresencial("Jordi", "Garcia", 10.0);
       presencial.treballarAmbCotxe(); // Metodo obsoleto
 
