@@ -17,11 +17,11 @@ public class Main {
     boolean resposta = llegirSiNo("Vols continuar? ");
 
     // Mostra els resultats
-        System.out.println("Nom: " + nom);
-   System.out.println("Edat: " + edat);
+    System.out.println("Nom: " + nom);
+    System.out.println("Edat: " + edat);
     System.out.println("Nombre enter: " + num1);
     System.out.println("Nombre decimal: " + num2);
-   System.out.println("Nombre decimal (double): " + num3);
+    System.out.println("Nombre decimal (double): " + num3);
     System.out.println("Caràcter: " + lletra);
     System.out.println("Resposta: " + resposta);
 }
