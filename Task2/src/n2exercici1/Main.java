@@ -9,7 +9,7 @@ public class Main {
         //  Exemples d'ús dels mètodes de la classe Entrada
         String nom = llegirString("Introdueix el teu nom: ");
 
-    byte edat = Entrada.llegirByte("Introdueix la teva edat: ");
+     byte edat = Entrada.llegirByte("Introdueix la teva edat: ");
     int num1 = llegirInt("Introdueix un nombre enter: ");
     float num2 = llegirFloat("FLOAT Introdueix un nombre decimal (coma com a separador): ");
     double num3 = llegirDouble("DOUBLE Introdueix un nombre decimal (coma com a separador): ");

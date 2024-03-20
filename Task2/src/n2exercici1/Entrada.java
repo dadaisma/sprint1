@@ -101,20 +101,20 @@ public class Entrada {
 
     public static boolean llegirSiNo(String missatge) {
         boolean valor = false;
-        boolean correcte = false;
-        while (!correcte) {
+        String resposta =scanner.nextLine();
+        do {
             System.out.println(missatge + " (s/n): ");
-            String resposta = scanner.nextLine();
+            resposta = scanner.nextLine();
             if (resposta.equalsIgnoreCase("s")) {
                 valor = true;
-                correcte = true;
             } else if (resposta.equalsIgnoreCase("n")) {
                 valor = false;
-                correcte = true;
             } else {
                 System.out.println("Opció no vàlida. Introdueix 's' o 'n'.");
             }
-        }
+        } while (!valor && !resposta.equalsIgnoreCase("n"));
         return valor;
     }
 }
+
+
