@@ -2,6 +2,7 @@ package n2exercici1;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class Entrada {
 
@@ -64,7 +65,7 @@ public class Entrada {
                 valor = scanner.nextDouble();
                 correcte = true;
             } catch (InputMismatchException e) {
-                System.out.println("Error de format. Introdueix un nombre decimal vàlid (coma com a separador).");
+                System.out.println("Error de format. Introdueix un nombre decimal vàlid (coma com a separador o int double).");
                 scanner.nextLine(); // Elimina el valor erroni del buffer
             }
         }
@@ -74,13 +75,19 @@ public class Entrada {
     public static char llegirChar(String missatge) {
         char valor = ' ';
         boolean correcte = false;
+        Pattern pattern = Pattern.compile("^[a-z]$");
         while (!correcte) {
             try {
                 System.out.print(missatge);
-                valor = scanner.next().charAt(0);
-                correcte = true;
+                String input = scanner.next();
+                if (input.length() == 1 && pattern.matcher(input).matches()) {
+                    valor = input.charAt(0);
+                    correcte = true;
+                } else {
+                    throw new Exception();
+                }
             } catch (Exception e) {
-                System.out.println("Error de format. Introdueix un caràcter vàlid.");
+                System.out.println("Error de format. Introdueix un caràcter vàlid (lletra minúscula).");
                 scanner.nextLine(); // Elimina el valor erroni del buffer
             }
         }

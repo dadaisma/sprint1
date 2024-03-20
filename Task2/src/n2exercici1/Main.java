@@ -12,7 +12,7 @@ public class Main {
      byte edat = Entrada.llegirByte("Introdueix la teva edat: ");
     int num1 = llegirInt("Introdueix un nombre enter: ");
     float num2 = llegirFloat("FLOAT Introdueix un nombre decimal (coma com a separador): ");
-    double num3 = llegirDouble("DOUBLE Introdueix un nombre decimal (coma com a separador): ");
+    double num3 = llegirDouble("DOUBLE Introdueix un nombre decimal (coma com a separador o int double): ");
     char lletra = llegirChar("Introdueix un caràcter: ");
     boolean resposta = llegirSiNo("Vols continuar? ");
 
