@@ -2,32 +2,34 @@ package n1exercici1;
 
 public class Main {
     public static void main(String[] args) {
-        Vent vent = new Vent();
-        vent.Tocar();
-        Corda corda = new Corda();
-        corda.Tocar();
-        Perc perc = new Perc();
-        perc.Tocar();
 
+        Vent vent = new Vent("Flauta", 50.85);
+        System.out.println(vent.tocar());
 
-        //
-        Vent.metodeEstatic();
-        Corda.metodeEstatic();
-        Perc.metodeEstatic();
+        Vent sax = new Vent("sax", 50.85);
+        System.out.println(sax.tocar());
 
-        // Calling static and non-static methods
-        printStaticMessage();
-        Main test = new Main();
-        test.printNonStaticMessage();
-    }
+        System.out.println(Vent.metodoStatic());
 
-    // Static method
-    public static void printStaticMessage() {
-        System.out.println("Aquest SI és un mètode estàtic.");
-    }
+        System.out.println();
 
-    // Non-static method
-    public void printNonStaticMessage() {
-        System.out.println("Aquest NO és un mètode estàtic.");
+        Corda corda = new Corda("Guitarra", 150.5);
+        System.out.println(corda.tocar());
+
+        Corda benjo = new Corda("benjo", 150.5);
+        System.out.println(benjo.tocar());
+
+        System.out.println(Corda.metodoStatic());
+
+        System.out.println();
+
+        Perc perc = new Perc("Timbal", 210.35);
+        System.out.println(perc.tocar());
+
+        Perc bongo = new Perc("bongo", 210.35);
+        System.out.println(bongo.tocar());
+
+        System.out.println(Perc.metodoStatic());
+
     }
 }

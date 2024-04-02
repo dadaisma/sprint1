@@ -1,13 +1,19 @@
 package n1exercici1;
 
-class Corda extends Instrument {
-    String nom = "mandolin";
-    int preu = 400;
-
-    void Tocar() {
-        System.out.println("Està sonant un instrument de corda ");
+public class Corda extends Instrument{
+    public Corda(String nombre, double precio) {
+        super(nombre, precio);
     }
-    static void metodeEstatic() {
-        System.out.println("Aquest és un mètode estàtic de la classe n1exercici1.Corda.");
+
+    public String tocar() {
+        return "Està sonant un instrument de corda";
+    }
+
+    static {
+        System.out.println("Clase Instrument Corda cargada");
+    }
+
+    public static String metodoStatic() {
+        return "Aquest és un mètode estàtic de la classe n1exercici1.Corda";
     }
 }
