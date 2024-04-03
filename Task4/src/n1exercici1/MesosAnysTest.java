@@ -11,11 +11,17 @@ public class MesosAnysTest {
         // La llista no és nul·la.
         assertNotNull(mesosAnys.generarLlistaMesos());
         System.out.println("La llista no és nul·la.");
-
+    }
+    @Test
+    public void testNrDeMeses()  {
+        MesosAnys mesosAnys = new MesosAnys();
         // La llista conté exactament 12 mesos
         assertEquals(12, mesosAnys.generarLlistaMesos().size());
         System.out.println("\n" + "La llista conté exactament 12 mesos.");
-
+    }
+    @Test
+    public void testAgostoPosicio() {
+        MesosAnys mesosAnys = new MesosAnys();
         // El mes 'agost' es troba a la posició 8 de la llista
         assertEquals("agost", mesosAnys.generarLlistaMesos().get(7));
         System.out.println("El mes 'agost' es troba a la posició 8 de la llista.");
