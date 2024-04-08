@@ -16,6 +16,8 @@ public class Smartphone extends  Telefon implements Camera, Rellotge {
     public void fotografiar() {
         System.out.println("S'Esta fent una foto!");
     }
+
+    @Override
     public void alarma() {
         System.out.println("Esta sonant l'alarma");
     }
