@@ -5,6 +5,7 @@ public class Vent extends Instrument{
         super(nombre, precio);
     }
 
+    @Override
     public String tocar() {
         return "Està sonant un instrument de vent";
     }

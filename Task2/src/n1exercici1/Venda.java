@@ -19,10 +19,10 @@ public class Venda {
     public void calcularTotal() throws VendaBuidaException {
         if (productes.isEmpty()) {
             throw new VendaBuidaException("Per fer una venda primer has d'afegir productes");
-        } else {
+        }
             for (Producte producte : productes) {
                 preuTotal += producte.getPreu();
-            }
+
         }
     }
 

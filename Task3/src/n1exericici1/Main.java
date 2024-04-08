@@ -9,18 +9,18 @@ public class Main {
 
 
     public static void main(String[] args) {
-Mes gener = new Mes ("gener");
-Mes febrer = new Mes ("febrer");
-Mes març = new Mes ("març");
-Mes abril = new Mes ("abril");
-Mes maig = new Mes ("maig");
-Mes juny = new Mes ("juny");
-Mes juliol = new Mes ("juliol");
-//s1exericici1.Mes agost = new s1exericici1.Mes ("agost");
-Mes setembre = new Mes ("setembre");
-Mes octubre = new Mes ("octubre");
-Mes novembre = new Mes ("denovembre");
-Mes desembre = new Mes ("desembre");
+        Mes gener = new Mes ("gener");
+        Mes febrer = new Mes ("febrer");
+        Mes març = new Mes ("març");
+        Mes abril = new Mes ("abril");
+        Mes maig = new Mes ("maig");
+        Mes juny = new Mes ("juny");
+        Mes juliol = new Mes ("juliol");
+        //s1exericici1.Mes agost = new s1exericici1.Mes ("agost");
+        Mes setembre = new Mes ("setembre");
+        Mes octubre = new Mes ("octubre");
+        Mes novembre = new Mes ("denovembre");
+        Mes desembre = new Mes ("desembre");
 
 
 

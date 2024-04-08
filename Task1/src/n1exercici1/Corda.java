@@ -5,6 +5,7 @@ public class Corda extends Instrument{
         super(nombre, precio);
     }
 
+    @Override
     public String tocar() {
         return "Està sonant un instrument de corda";
     }

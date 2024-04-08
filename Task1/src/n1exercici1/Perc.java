@@ -5,6 +5,7 @@ public class Perc extends Instrument{
         super(nombre, precio);
     }
 
+   @Override
     public String tocar() {
         return "Està sonant un instrument de percussió";
     }
