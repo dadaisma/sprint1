@@ -1,6 +1,9 @@
 package n2exercici2;
 
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Comparator;
+import java.util.TreeSet;
 
 public class Restaurant2 {
 
@@ -48,4 +51,29 @@ public class Restaurant2 {
                 ", puntuació=" + puntuació +
                 '}';
     }
+
+
+    public static HashSet<Restaurant2> insertarRestaurant(HashSet<Restaurant2> restaurants, Restaurant2 entradaRest) {
+        boolean exist = false;
+        for(Restaurant2 restaurant : restaurants){
+            if(restaurant.equals(entradaRest)){
+                System.out.println("no es pot entrar l'objecte restaurant, perque ja està el restaurant");
+                exist = true;
+            }
+        }
+        if(!exist){
+            restaurants.add(entradaRest);
+            return restaurants;
+        }
+        return  restaurants;
+    }
+
+    //-------------------------EXERCICI 2------------------------------------
+    public static TreeSet<Restaurant2> ordenarRestaurants(HashSet<Restaurant2> llista) {
+        TreeSet<Restaurant2> llistaOrdenada = new TreeSet<>(new ComparatorRestaurant());
+
+        llistaOrdenada.addAll(llista);
+        return llistaOrdenada;
+    }
+
 }
