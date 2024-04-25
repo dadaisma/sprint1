@@ -1,12 +1,8 @@
 package n2exercici1;
 
-interface Camera {
-    void fotografiar();
-}
 
-interface Rellotge {
-    void alarma();
-}
+
+
 public class Smartphone extends  Telefon implements Camera, Rellotge {
     public Smartphone(String marca, String model) {
         super(marca, model);
