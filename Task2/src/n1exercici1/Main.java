@@ -5,22 +5,36 @@ package n1exercici1;
 public class Main {
     public static void main(String[] args) {
         // Create some products
-    //    n1exercici1.Producte product1 = new n1exercici1.Producte("Pasta", 10.0);
-     //   n1exercici1.Producte product2 = new n1exercici1.Producte("Arroz", 20.0);
-     //   n1exercici1.Producte product3 = new n1exercici1.Producte("Vino", 165.0);
+        n1exercici1.Producte product1 = new n1exercici1.Producte("Pasta", 10.0);
+        n1exercici1.Producte product2 = new n1exercici1.Producte("Arroz", 20.0);
+        n1exercici1.Producte product3 = new n1exercici1.Producte("Vino", 165.0);
 
         // Create a sale and add products to it
-        Venda sale = new Venda();
-      //  sale.afegirProducte(product1);
-     //   sale.afegirProducte(product2);
-       // sale.afegirProducte(product3);
+        Venda sale1 = new Venda();
+        sale1.afegirProducte(product1);
+        sale1.afegirProducte(product2);
+        sale1.afegirProducte(product3);
+
+        Venda sale2 = new Venda();
         // Exemple de generació i captura d'una excepció ArrayIndexOutOfBoundsException
         try {
             // Calculate the total price of the sale
-            sale.calcularTotal();
-            System.out.println("Total price of the sale: " + sale.getPreuTotal());
+            sale1.calcularTotal();
+            System.out.println("Total price of the sale: " + sale1.getPreuTotal());
         } catch (VendaBuidaException e) {
             System.out.println(e.getMessage());
         }
+        try {
+            // Calculate the total price of the sale
+            sale2.calcularTotal();
+            System.out.println("Total price of the sale: " + sale2.getPreuTotal());
+        } catch (VendaBuidaException e) {
+            System.out.println(e.getMessage() +" bau");
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println(e.getMessage());
+        }
+
+
+
     }
 }
