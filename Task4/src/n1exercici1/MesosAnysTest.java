@@ -1,5 +1,6 @@
 package n1exercici1;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -11,24 +12,26 @@ public class MesosAnysTest {
         mesosAnys = new MesosAnys();
     }
     @Test
+    @DisplayName("La lista de meses no es nula")
     public void testGenerarLlistaMesos() {
-       // MesosAnys mesosAnys = new MesosAnys();
 
         assertNotNull(mesosAnys.generarLlistaMesos());
-        System.out.println("La llista no és nul·la.");
+
     }
     @Test
+    @DisplayName("La lista contiene exactamente 12 meses")
     public void testNrDeMeses()  {
-     //   MesosAnys mesosAnys = new MesosAnys();
+
 
         assertEquals(12, mesosAnys.generarLlistaMesos().size());
-        System.out.println("\n" + "La llista conté exactament 12 mesos.");
+
     }
     @Test
+    @DisplayName("Agosto se encuentra en la posición 8 de la lista")
     public void testAgostoPosicio() {
       //  MesosAnys mesosAnys = new MesosAnys();
 
         assertEquals("agost", mesosAnys.generarLlistaMesos().get(7));
-        System.out.println("El mes 'agost' es troba a la posició 8 de la llista.");
+
     }
 }
